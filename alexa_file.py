@@ -43,20 +43,23 @@ def start_skill():
 @ask.intent("WorldNewsIntent")
 def world_news_intent():
     headlines = get_headlines('worldnews')
-    headline_msg = 'The current world headlines are {}'.format(headlines)
+    headline_msg = 'The current top 10 world headlines are {}'.format(headlines)
     return statement(headline_msg)
+
 
 @ask.intent("GadgetsNewsIntent")
 def world_news_intent():
     headlines = get_headlines('gadgets')
-    headline_msg = 'The current gadget headlines are {}'.format(headlines)
+    headline_msg = 'The current top 10 gadget headlines are {}'.format(headlines)
     return statement(headline_msg)
 
 @ask.intent("AndroidNewsIntent")
 def world_news_intent():
     headlines = get_headlines('android')
-    headline_msg = 'The current Android headlines are {}'.format(headlines)
+    headline_msg = 'The current top 10 Android headlines are {}'.format(headlines)
     return statement(headline_msg)
+
+
 
 @ask.intent("NoIntent")
 def no_intent():
